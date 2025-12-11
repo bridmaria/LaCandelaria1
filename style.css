@@ -1,0 +1,497 @@
+/* --- TIPOGRAFÍAS --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jost', sans-serif;
+    color: #333;
+}
+
+/* --- HERO --- */
+.hero {
+    height: 85vh;
+    background-image: url('img/tartass.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 68px;
+    margin: 0;
+    color: #4a3d2e;
+    font-weight: 600;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #5a5a5a;
+}
+
+.line {
+    width: 70px;
+    height: 2px;
+    background-color: #c7a27e;
+    margin: 25px auto 0;
+}
+
+/* --- PROCESS SECTION --- */
+.process-section {
+    padding: 140px 8%;
+    background: #fff;
+}
+
+.process-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+/* --- LEFT IMAGE --- */
+.process-image img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* --- RIGHT TEXT --- */
+.process-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    margin-bottom: 20px;
+    color: #3c2f25;
+}
+
+.process-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 40px;
+}
+
+/* --- ICON ROW --- */
+.icons-row {
+    display: flex;
+    gap: 40px;
+}
+
+.icon-box {
+    text-align: center;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #c7a27e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    font-size: 28px;
+}
+
+.icon-box p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 992px) {
+    .process-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icons-row {
+        justify-content: center;
+    }
+}
+
+/* ============================= */
+/*      SECCION HISTORIA         */
+/* ============================= */
+
+.history-section {
+    position: relative;
+    padding: 120px 0;
+    overflow: hidden;
+}
+
+/* Fondo grande */
+.history-bg {
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+/* Texto */
+.history-text {
+    color: #5a5a5a;
+    position: relative;
+    z-index: 3;
+}
+
+.history-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.gold-line {
+    width: 70px;
+    height: 2px;
+    background: #d7c69e;
+    margin: 15px 0 25px 0;
+}
+
+.history-text p {
+    font-size: 17px;
+    line-height: 1.7rem;
+    margin-bottom: 40px;
+}
+
+/* Imagen */
+.history-image img {
+    width: 520px;
+    max-width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* CORRECCIÓN PARA PC (lado a lado) */
+@media (min-width: 992px) {
+    .history-section .row {
+        display: flex;
+        align-items: center;
+    }
+
+    .history-text {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+        text-align: left;
+        max-width: 600px;
+    }
+
+    .history-image {
+        text-align: right;
+    }
+
+    .history-image img {
+        width: 480px;
+    }
+}
+
+/* CORRECCIÓN PARA MÓVIL (imagen abajo) */
+@media (max-width: 991px) {
+
+    .history-text {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        text-align: left;
+    }
+
+    .history-image {
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    .history-image img {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+/* Ajustes móviles extra */
+@media (max-width: 576px) {
+    .history-text h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .history-text p {
+        font-size: 0.95rem;
+    }
+}
+
+
+/* ============================= */
+/*     ATENCIÓN AL DETALLE      */
+/* ============================= */
+
+.detail-section {
+    background: #ffffff;
+}
+
+.detail-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #3c2f25;
+}
+
+.detail-text {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 500px;
+    color: #555;
+}
+
+.gold-line {
+    width: 70px;
+    height: 2px;
+    background: #d7c69e;
+    margin-top: 10px;
+}
+
+/* Números */
+.stat-number {
+    font-size: 42px;
+    font-weight: 500;
+    color: #c7a27e;
+    margin-bottom: 5px;
+    font-family: 'Playfair Display', serif;
+}
+
+.stat-label {
+    font-size: 15px;
+    color: #6c6c6c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Imagen */
+.detail-section img {
+    max-width: 95%;
+    border-radius: 8px;
+}
+
+/* ==================================== */
+/*            SECCIÓN GALLETAS          */
+/* ==================================== */
+
+/* SECCIÓN GALLETAS */
+
+.cookies-section {
+    background: #0d0d0d;
+    background-image: url("img/fondo.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+}
+
+.cookie-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+
+.cookie-item p {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #5a5a5a;
+}
+
+/* IMAGEN CENTRAL */
+.central-cookie {
+    width: 180px;
+    position: relative;
+    z-index: 10;
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Animación suave opcional */
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+    .central-cookie {
+        margin: 40px 0;
+    }
+
+    .cookie-item p {
+        max-width: 100%;
+    }
+
+    .cookies-section .row {
+        text-align: center;
+    }
+}
+
+/*------------------------*/
+.ofrecemos {
+    background-color: #fff;
+}
+
+.img-ofrecemos {
+    width: 100%;
+    object-fit: cover;
+}
+
+.titulo-ofrecemos {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.linea-decorativa {
+    width: 70px;
+    height: 2px;
+    background-color: #c8a954;
+    /* doradito */
+}
+
+.texto-ofrecemos {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    max-width: 480px;
+}
+
+.firma-ofrecemos {
+    width: 180px;
+}
+
+/*------------------------*/
+.pedido-online {
+    background-image: url("img/fondo2.jpg");
+    /* <-- TU IMAGEN */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /* fondo fijo */
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    position: relative;
+}
+
+/* capa oscura suave para que el texto se lea */
+.pedido-online::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* background: rgba(0, 0, 0, 0.35); */
+    /* oscurecido elegante */
+    z-index: 1;
+}
+
+.pedido-online .container {
+    position: relative;
+    z-index: 2;
+    /* para que el contenido quede arriba */
+}
+
+.titulo-pedido {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.texto-pedido {
+    max-width: 550px;
+    color: #5a5a5a;
+    line-height: 1.7;
+}
+
+.btn-pedido {
+    background-color: #c8a954;
+    color: #5a5a5a;
+    padding: 12px 35px;
+    font-size: 1.1rem;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn-pedido:hover {
+    background-color: #b69746;
+    color: #fff;
+}
+
+.linea-decorativa {
+    width: 70px;
+    height: 2px;
+    background-color: #c8a954;
+}
+
+/*------------------------------*/
+.footer {
+    background: #fffdfd; /* negro elegante */
+    color: #ddd;
+    position: relative;
+}
+
+.footer-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #423d3d;
+}
+
+.footer-subtitle {
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #b08a21; /* dorado */
+}
+
+.footer-line {
+    width: 80px;
+    height: 2px;
+    background-color: #c8a954;
+    margin-top: 8px;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    color: #5a5a5a;
+    line-height: 1.7;
+    max-width: 400px;
+}
+
+.footer-social a {
+    color: #705c24;
+    font-size: 1.7rem;
+    margin: 0 12px;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #b69746;
+}
+
+.footer-copy {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    font-size: 0.85rem;
+    color: #888;
+}
+
